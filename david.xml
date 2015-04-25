@@ -14,7 +14,26 @@
         </value>
         <next>
           <block type="oled_drawtext" id="132">
-            <field name="TEXT">look at this derpy face :[</field>
+            <field name="TEXT">look at this derpy</field>
+            <next>
+              <block type="oled_setcursor" id="147" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="169">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="170">
+                    <field name="NUM">20</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="221">
+                    <field name="TEXT">face [:]</field>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
